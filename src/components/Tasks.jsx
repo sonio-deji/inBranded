@@ -13,7 +13,7 @@ const Tasks = ({ handleSearchBar, completedTasks }) => {
   function projectFilter() {
     if (handleSearchBar) {
       return projects.filter((project) =>
-        project.title.includes(handleSearchBar)
+        project.title.toLowerCase().includes(handleSearchBar.toLowerCase())
       );
     } else if (completedTasks) {
       return projects

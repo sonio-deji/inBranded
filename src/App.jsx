@@ -16,6 +16,10 @@ const Content = styled.div`
   display: flex;
   margin-top: 50px;
   border-top: 1px solid lightgray;
+  @media (max-width: 890px) {
+    flex-direction: column;
+    border-top: 1px solid lightgray;
+  }
 `;
 const RightContainer = styled.div`
   display: flex;
